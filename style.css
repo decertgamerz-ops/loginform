@@ -1,0 +1,110 @@
+*{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #4e73df, #1cc88a);
+        }
+
+        .form-box{
+            background: #ffffff;
+            padding: 40px 30px;
+            width: 350px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .form-box h2{
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        #forms{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        #forms input{
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        #forms input:focus{
+            border-color: #4e73df;
+            outline: none;
+            box-shadow: 0 0 5px rgba(78,115,223,0.5);
+        }
+
+        .submit{
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: #4e73df;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+
+        .extra{
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .extra a{
+            text-decoration: none;
+            color: #5b86e5;
+            font-weight: bold;
+        }
+        .submit:hover{
+            background: #2e59d9;
+        }
+
+
+                .popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+}
+
+.popup-content button {
+    margin-top: 10px;
+    padding: 6px 12px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+        /* Responsive */
+        @media(max-width: 400px){
+            .form-box{
+                width: 90%;
+                padding: 30px 20px;
+            }
+        }

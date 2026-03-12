@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Dashboard</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#4e73df,#1cc88a);
+}
+
+.dashboard{
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    text-align:center;
+    width:90%;
+    max-width:400px;
+}
+
+.dashboard h1{
+    font-size:28px;
+    color:#333;
+    margin-bottom:25px;
+}
+
+.dashboard span{
+    color:#4e73df;
+    font-weight:bold;
+}
+
+/* Input box */
+.user-input{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:14px;
+}
+
+/* Add button */
+.add-btn{
+    padding:10px 20px;
+    border:none;
+    background:#4e73df;
+    color:white;
+    font-size:15px;
+    border-radius:6px;
+    cursor:pointer;
+    margin-bottom:20px;
+}
+
+.add-btn:hover{
+    background:#2e59d9;
+}
+
+/* Logout Button */
+.logout-btn{
+    padding:10px 25px;
+    border:none;
+    background:#e74c3c;
+    color:white;
+    font-size:16px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.logout-btn:hover{
+    background:#c0392b;
+}
+
+@media (max-width:480px){
+    .dashboard{
+        padding:25px;
+    }
+
+    .dashboard h1{
+        font-size:22px;
+    }
+
+    .logout-btn{
+        width:100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="dashboard">
+    <h1>Hi, <span id="username">User</span> 👋</h1>
+
+    <!-- Input Box -->
+    <!-- <input type="text" class="user-input" id="userText" placeholder="Write something..."> -->
+
+    <!-- Button -->
+    <!-- <button class="add_btn" id="addText">Add</button> -->
+
+    <!-- <br> -->
+
+    <!-- Logout Button -->
+    <button class="logout-btn" id="logout">Logout</button>
+</div>
+
+<script src="dash_script.js"></script>
+
+</body>
+</html>

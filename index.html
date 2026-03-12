@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-box">
+        <h2>Registration Form</h2>
+        <form id="forms">
+            <input class="username" type="text" placeholder="Enter username">
+            <input class="email" type="text" placeholder="Enter email">
+            <input class="phone_number" type="number" placeholder="Enter number">
+             <input class="password" type="password" placeholder="Enter password">
+            <input class="confirm_password" type="password" placeholder="Confirm password">
+            
+            <button type="submit" class="submit">Submit</button>
+        </form>
+
+        <div class="extra">
+            you have already a account? <a href="login.html">Login</a>
+        </div>
+    </div>
+
+     <div id="popup" class="popup">
+        <div class="popup-content">
+            <p id="popupMessage"></p>
+            <button class="close_mgs">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
