@@ -38,7 +38,7 @@ userLoggenIN()
 function userLoggenIN() {
     let loggedUser = JSON.parse(localStorage.getItem("loggeinuser"));
     if (loggedUser) {
-        window.location.href = "/Registration_form/dashboard.html";
+        window.location.href = "dashboard.html";
     }
 }
 
@@ -75,7 +75,7 @@ function userValidation() {
 
     if (FindUser) {
 
-        window.location.href = "/Registration_form/dashboard.html";
+        window.location.href = "dashboard.html";
     }
     else {
         alert("User Not Found");
