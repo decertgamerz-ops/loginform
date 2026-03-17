@@ -73,7 +73,7 @@ submit.addEventListener("submit", (e) => {
    localStorage.setItem("RegistrationDetails", JSON.stringify(storeData));
    delete details.password;
    localStorage.setItem("loggeinuser", JSON.stringify(details));
-    window.location.href = "/Registration_form/dashboard.html";
+    window.location.href = "dashboard.html";
    // showPopup("account created successfully")
    // document.querySelector("#forms").reset();
 })
@@ -89,7 +89,7 @@ closeMgs.addEventListener("click", () => {
 function userLoggenIN() {
     let loggedUser = JSON.parse(localStorage.getItem("loggeinuser"));
     if (loggedUser) {
-        window.location.href = "/Registration_form/dashboard.html";
+        window.location.href = "dashboard.html";
     }
 }
 // function showPopup(message) {
